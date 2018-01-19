@@ -1,0 +1,15 @@
+<h1>List of Products</h1>
+<p>This is a very basic demo of the Firestore database.</p>
+
+<input [(ngModel)]="content" placeholder="Add your own note" class="input">
+
+
+<button class="button is-success" (click)="createNote()" [disabled]="content?.length < 2 || content?.length > 200">
+  Add Note
+</button>
+<hr>
+<div *ngFor="let note of notes | async">
+  <product-detail [note]="note"></product-detail>
+</div>
+
+

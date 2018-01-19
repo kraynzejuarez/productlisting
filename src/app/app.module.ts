@@ -25,10 +25,12 @@ import { environment } from '../environments/environment';
 import { AngularFireModule } from 'angularfire2';
 export const firebaseConfig = environment.firebaseConfig;
 import { AngularFirestoreModule } from 'angularfire2/firestore';
+import { ProductsComponent } from './products/products.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    ProductsComponent,
   ],
   imports: [
     BrowserModule,
